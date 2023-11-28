@@ -1,5 +1,18 @@
-# API: para llevar la gestión de nuestras tareas diarias.
+# API: Dedicada a la  Gestión de Tareas Diarias.
+---------------------------------------------------------------------------------------------------------------------------
+NOTA: Se debe tener instalado MariaDB + HeidiSQL y crear la Base de Datos siguiendo el siguiente codigo para que funcione:
+CREATE TABLE `todo` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
+  `description` varchar(50) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  `status` varchar(50) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci
 
+-----------------------------------------------------------------------------------------------------------------------------
 Para trabajar con este proyecto deberás realizar lo siguiente:
 1- Abre la terminal y ejecuta el comando `npm install`, el cual instalará todas las dependencias del proyecto. Sin este paso no podrás trabajar.
 2- A continuación ejecuta el comando `npm run dev`, el cual inicia el servidor en "modo desarrollo" utilizando nodemon.
