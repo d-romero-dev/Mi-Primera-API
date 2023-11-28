@@ -1,6 +1,7 @@
 # API: Dedicada a la  Gestión de Tareas Diarias.
 ---------------------------------------------------------------------------------------------------------------------------
 NOTA: Se debe tener instalado MariaDB + HeidiSQL y crear la Base de Datos siguiendo el siguiente codigo para que funcione:
+---------------------------------------------------------------------------------------------------------------------------
 CREATE TABLE `todo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -17,7 +18,7 @@ Para trabajar con este proyecto deberás realizar lo siguiente:
 1- Abre la terminal y ejecuta el comando `npm install`, el cual instalará todas las dependencias del proyecto. Sin este paso no podrás trabajar.
 2- A continuación ejecuta el comando `npm run dev`, el cual inicia el servidor en "modo desarrollo" utilizando nodemon.
 3- Ya puedes comenzar a trabajar en app.js.
-
+------------------------------------------------------------------------------------------------------------------------------
 -Solicitudes HTTP:
 GET: http://localhost:3000/people  ->Obtiene todos los datos.
 
