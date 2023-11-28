@@ -23,5 +23,14 @@ Sintaxis para realizar una solicitud Post (Utilizando Postman: Body-raw-JSON):
 }
 
 PUT: http://localhost:3000/people/"Insertar aqui el id que se desea modificar, sin comillas"    RESULTADO-> Actualiza/Modifica los datos de un id especifico.
+Sintaxis para realizar una solicitud PUT (Utilizando Postman: Body-raw-JSON):
+{
+  "NAME": "NombreActualizado",
+  "lastname": "ApelllidoActualizado",
+  "DESCRIPTION": "DescripcionActualizada",
+  "created_at": "2023-11-23 03:00:00", // Formato DATETIME: YYYY-MM-DD HH:MM:SS
+  "updated_at": "2023-11-23 03:00:00", // Formato DATETIME: YYYY-MM-DD HH:MM:SS
+  "status": "todo okey"
+}
 
 DELETE: http://localhost:3000/people/"Insertar aqui el id que se desea eliminar, sin comillas" RESULTADO-> Elimina todos los datos de un id especifico.
